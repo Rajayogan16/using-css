@@ -1,0 +1,724 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.header-inner1 {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.header-inner1 li,.header-inner2 li{
+    margin: 0 10px;
+    color: white;
+}
+
+.header-inner1 li i,.header-inner2 li i{
+    margin: 0 10px;
+    color: white;
+}
+
+.header-inner2{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 226, 226);
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar-brand{
+    
+    font-size: xx-large;
+    font-weight: bolder;
+    align-self: center;
+    text-decoration: none;
+}
+
+.navbar-brand i{
+    margin: 0 10px;
+    font-weight: bolder;
+}
+
+.navbar-nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: x-large;
+    
+}
+
+.navbar-nav li{
+    margin-left: 10px;
+    float: left;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+    background-color: wheat;
+    padding: 0 10px ;
+}
+
+.navbar-nav :nth-child(6):hover .dropdown-menu{
+   display: block;
+   margin-left: -10px;
+   margin-top:30px;
+   width: auto;
+   z-index: 1;
+}
+
+
+.navbar-nav  li a{
+    text-decoration: none;
+    float: left;
+}
+
+.navbar-nav button{
+    padding: 5px 0;
+    font-size: large;
+    margin-right: 10px;
+    background-color: blue;
+    border-color: transparent;
+}
+
+.navbar-nav button a{
+    color: white;
+}
+
+/*home*/
+/*carousel*/
+.carousel-container{
+    background-color: blue;
+    overflow: hidden;
+    width:100%;
+}
+.carousel{
+    width:fit-content;
+    display: flex;
+    animation: 10s carousel infinite;
+    animation-play-state: running;
+    transition:linear;
+}
+
+.carousel-item{
+    height: fit-content;
+    position: relative;
+}
+
+@keyframes carousel
+ {
+  0%{margin-left: 0%;} 
+  45%{margin-left: 0%;} 
+  50%{margin-left: -100%;}
+  95%{margin-left: -100%;}
+  100%{margin-left: 0%;}
+ }
+
+.carousel-item img{
+    opacity: 0.8;
+    width: 1520px;
+    height: 700px;
+    
+}
+
+.carousel-caption1{
+    position: absolute;
+    text-align: center;
+    top:40%;
+    left: 12%;
+    color: white;
+}
+
+.carousel-caption1 h5{
+    font-size: 25px;
+}
+.carousel-caption1 h1{
+    font-size: 70px;
+}
+
+.cap-button1 button{
+    background-color:blue;
+    font-size: 20px;
+    border-color: transparent;
+ }
+
+ .cap-button1 button a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+ }
+
+ #us{
+    animation: 2s us infinite;
+    animation-direction: alternate-reverse;
+    transition: linear;
+    background-color: transparent;
+    border-color: white;
+ }
+ 
+ @keyframes us
+ {
+  0%{margin-left: 0%;}  
+  100%{margin-left: 100px;}
+ }
+ /*carousel ends*/
+
+ /*box*/
+ .container-logo{
+    width: 80%;
+    margin:0 10%;
+    background-color: white;
+    display: flex;
+    background-color: blue;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 102%;
+ }
+
+ .box{
+    top: -50%;
+    display: flex;
+    background-color: blue;
+    justify-content: space-evenly;
+    color: white;
+    padding: 2%;
+ }
+ 
+
+
+ .box-logo{
+    align-self: center;
+ }
+
+ .box-logo i{
+    font-size: 30px;
+    padding: 14px;
+    background-color: #fff;
+    color: blue;
+ }
+
+ .box-text{
+    font-size:30px;
+    padding-left: 5px;
+ }
+
+ #box{
+    background-color: #fff;
+    padding:2%  8%;
+ }
+
+ .box-h1{
+    color: blue;
+ }
+
+/*home-ends*/
+/*about*/
+
+.about-container{
+    display:flex ;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.about-container h4{
+    font-size: larger;
+    color: blue;
+}
+
+.about-container h1{
+    font-size: 50px;
+}
+
+.animation{
+    margin: 2% 0;
+    height: 5px;
+    width: 100px;
+    background-color: blue;
+}
+ .inner{
+    background-color: #fff;
+    height: 5px;
+    width: 10px;
+    border-radius: 20px;
+    animation: 1s inner infinite;
+    animation-direction: alternate-reverse;
+    transition:linear;
+}
+
+@keyframes inner 
+{
+ 0%{margin-left: 0%;}
+   
+ 100%{margin-left: 90px;}
+}
+
+.about-container p{
+    font-size: 30px;
+    margin: 5% 0;
+}
+
+.about{
+    
+    align-self: center;
+}
+.about-list
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.about-list1{
+    
+    font-size: 30px;
+}
+
+.about-list1 h5{
+    
+    width: 100%;
+    display: flex;
+}
+.about-list1 h5 i{
+    margin-right: 5px;
+}
+
+.call{
+    display: inline-flex;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.call-logo{
+    
+    font-size: 40px;
+    background-color: blue;
+}
+
+.call-logo i{
+    color: #fff;
+    padding: 0% 5px;
+}
+
+.call-text{
+    font-size: 25px;
+}
+.about-button button{
+    background-color: blue;
+    border: transparent;
+    padding:2px;
+}
+
+.about-button button a{
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+}
+
+.about-image img{
+    height: 700px;
+    width: 1400px;
+    max-width: 100%;
+}
+
+/*about ends*/
+/*portfolio*/
+.heading{
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 3%;
+}
+
+.heading h5{
+    font-size: large;
+    color: blue;
+}
+.portfolio-container{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    box-shadow: 2px 4px 8px grey;
+    line-height: 1.6;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.card i{
+    font-size: 20px;
+    padding: 2%;
+    color: white;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.card h5{
+    font-size: 25px;
+    color: blue;
+    margin-top: 10px;
+}
+
+.card p{
+    font-size: large;
+}
+
+.folio-image
+{
+    box-shadow: 2px 4px 8px grey;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: auto;
+}
+
+/*portfolio ends*/
+/*service*/
+
+.service-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 20px;
+    padding: 2%;
+    text-align: center;
+}
+
+.ser-card{
+    box-shadow: 2px 4px 8px grey;
+    line-height: 1.7;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.ser-card h5{
+    font-size: 25px;
+    color: blue;
+    margin-top: 10px;
+}
+
+.ser-card p{
+    font-size: large;
+}
+
+.diamond{
+    transform: rotate(45deg);
+    width: fit-content;
+    margin: auto;
+    background-color: blue;
+    padding: 0;
+}
+
+.diamond i{
+    transform: rotate(-45deg);
+    padding: 10px;
+    color: #fff;
+}
+/*service ends
+price */
+
+.price-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 2%;
+}
+
+.price-card{
+    text-align: center;
+    box-shadow: 2px 4px 8px grey;
+    border-radius: 5%;
+    line-height:1.7;
+    padding: 2%;
+}
+
+.price-card h1{
+    font-size: 50px;
+}
+
+.price-card h5{
+    font-size: larger;
+}
+
+.price-card h2{
+    color: blue;
+    font-size: 40px;
+}
+
+.price-card ul{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.price-card ul li{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: large;
+    line-height: 1.6;
+}
+
+.price-card ul li i{
+    color: blue;
+}
+
+.price-card ul :nth-child(3) i,.price-card ul :nth-child(4) i{
+    color: red;
+}
+
+.price-card a{
+    background-color: blue;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/*price-ends*/
+/*quote*/
+
+.quote-container{
+    display: flex;
+    
+    margin-top: 5%;
+    padding: 5%;
+    flex: 5;
+    line-height: 1.6;
+}
+
+.quote h4{
+    font-size: x-large;
+    color: blue;
+}
+
+.quote p{
+    font-size: large;
+    margin-top: 15px;
+}
+.quote h1{
+    font-size: 40px;
+}
+.quote-content{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 25px;
+}
+
+.quote-box{
+    flex: 5;
+    border: 2px solid black;
+    padding: 5% 5%;
+    line-height: 3;
+    width: 100%;
+    background-color: blue;
+}
+
+.quote-box input,select{
+    width: 500px;
+    height: 25px;
+}
+
+.quote-box textarea{
+    width: 500px;
+}
+
+.quote-box button{
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 2%;
+    font-size: large;
+}
+
+/*quote-ends
+
+testimonials*/
+.test-container{
+    display: flex;
+   margin-top: 2%;
+   justify-content:center;
+   width: 90%;
+   margin-left: 5%;
+}
+
+.test-card{
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px grey;
+}
+
+.test-card p{
+    font-size: large;
+    margin-top: 5%;
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    background-color: rgb(192, 184, 184);
+    font-size: larger;
+}
+
+/*test ends
+team*/
+.team-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.team-card, .team-card img{
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px grey;
+    font-size: 30px;
+}
+
+.teamcard-body{
+    text-align: center;
+}
+
+.card-title{
+    color: blue;
+}
+
+/*team ends
+blog*/
+
+.blog-container{
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.blog-card {
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px grey;
+    text-align: center;
+    line-height: 2.5;
+    margin-left: 2%;
+}
+
+.blog-card p{
+    line-height: normal;
+}
+
+.blog-card img{
+    border-radius: 10px;
+}
+
+.card-body{
+    text-align: left;
+    font-size: large;
+    padding-left: 5%;
+}
+
+.card-body i{
+    color: blue;
+    margin-right: 15px;
+}
+
+.card-body a{
+    margin-right: 10px;
+}
+
+.Read{
+    color: blue;
+}
+
+.vendor{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1% 0;
+}
+
+/*blog-ends
+
+footer*/
+
+footer{
+    background-color: black;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    background-color:black;
+    color: #fff;
+}
+
+.foot-card{
+    padding: 5%;
+    border: 2px solid black;
+}
+
+.foot-card1{
+    width: 400px;
+    padding: 5%;
+    color: white;
+}
+
+.foot-card1 i,.foot-card1 a{
+    color: #fff;
+}
+
+.foot-card1 p{
+    margin-top: 5%;
+}
+
+
+.foot-card{
+    line-height: 1.6;
+    border: 2px solid black;
+    text-align: center;
+    color: #fff;
+}
+
+.foot-card i{
+    color: #fff;
+    text-align: center;
+}
+
+.foot-card ul li{
+    list-style-type: none;
+}
+
+.foot-card ul li a,.foot-card ul li i{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-header{
+    font-size: xx-larger;
+    background-color: transparent;
+    text-align: center;
+}
